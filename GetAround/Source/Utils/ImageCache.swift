@@ -15,8 +15,6 @@ final class ImageCache {
     private var queue = [String : [(UIImage?) -> ()]]()
     
     private let DEFAULT_IMAGE = "default"
-
-    // MARK: - Methods
     
     public func addImage(identifier: String, image: UIImage) {
         self.imagesCash.setObject(image, forKey: identifier as NSString)

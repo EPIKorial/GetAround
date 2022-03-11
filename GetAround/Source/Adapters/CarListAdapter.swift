@@ -25,7 +25,7 @@ class CarListAdapter : NSObject, TableViewAdapter {
         
         self.delegate = delegate as? CarListingAdapterDelegate
         self.tableView = tableView
-        
+        tableView.delegate = self
         tableView.dataSource = self
 
         let carListCell = UINib(nibName: "CarListCell",

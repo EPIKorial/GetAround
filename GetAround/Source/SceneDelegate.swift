@@ -19,8 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = CarListingViewController()
         window?.makeKeyAndVisible()
+        
+        let viewController = CarListingViewController()
+         let navViewController = UINavigationController(rootViewController: viewController)
+         window?.rootViewController = navViewController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

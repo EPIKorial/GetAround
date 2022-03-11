@@ -13,7 +13,6 @@
 		F77C74B127DAA47A006FF393 /* CarListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C74B027DAA47A006FF393 /* CarListingViewController.swift */; };
 		F77C74B627DAA47B006FF393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77C74B527DAA47B006FF393 /* Assets.xcassets */; };
 		F77C74C227DAA59B006FF393 /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C74C127DAA59B006FF393 /* CarDetailsViewController.swift */; };
-		F77C74CB27DAA8C4006FF393 /* XIBUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C74CA27DAA8C4006FF393 /* XIBUtils.swift */; };
 		F77C74CD27DAA900006FF393 /* CarListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77C74CC27DAA900006FF393 /* CarListingViewController.xib */; };
 		F77C74D227DAABAF006FF393 /* CarListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C74D127DAABAF006FF393 /* CarListAdapter.swift */; };
 		F77C74D427DAAC86006FF393 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C74D327DAAC86006FF393 /* Car.swift */; };
@@ -25,6 +24,7 @@
 		F77C74E727DAC648006FF393 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C74E627DAC648006FF393 /* ImageCache.swift */; };
 		F77C74E927DACF1C006FF393 /* CarListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77C74E827DACF1C006FF393 /* CarListCell.xib */; };
 		F77C74EC27DAD1E9006FF393 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = F77C74EB27DAD1E9006FF393 /* star.png */; };
+		F77C74EE27DAD8D7006FF393 /* CarDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77C74ED27DAD8D7006FF393 /* CarDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,6 @@
 		F77C74B527DAA47B006FF393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F77C74BA27DAA47B006FF393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F77C74C127DAA59B006FF393 /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
-		F77C74CA27DAA8C4006FF393 /* XIBUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBUtils.swift; sourceTree = "<group>"; };
 		F77C74CC27DAA900006FF393 /* CarListingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarListingViewController.xib; sourceTree = "<group>"; };
 		F77C74D127DAABAF006FF393 /* CarListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListAdapter.swift; sourceTree = "<group>"; };
 		F77C74D327DAAC86006FF393 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		F77C74E627DAC648006FF393 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		F77C74E827DACF1C006FF393 /* CarListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarListCell.xib; sourceTree = "<group>"; };
 		F77C74EB27DAD1E9006FF393 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		F77C74ED27DAD8D7006FF393 /* CarDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,6 @@
 				F77C74DC27DAB09D006FF393 /* Services */,
 				F77C74D527DAACD5006FF393 /* XIB */,
 				F77C74D027DAABA0006FF393 /* Adapters */,
-				F77C74C827DAA773006FF393 /* Extensions */,
 				F77C74C427DAA5CA006FF393 /* Views */,
 				F77C74C327DAA5BC006FF393 /* Models */,
 				F77C74C027DAA567006FF393 /* Controllers */,
@@ -170,14 +169,6 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		F77C74C827DAA773006FF393 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F77C74CA27DAA8C4006FF393 /* XIBUtils.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		F77C74D027DAABA0006FF393 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +183,7 @@
 			children = (
 				F77C74E827DACF1C006FF393 /* CarListCell.xib */,
 				F77C74CC27DAA900006FF393 /* CarListingViewController.xib */,
+				F77C74ED27DAD8D7006FF393 /* CarDetailsViewController.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -281,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77C74E927DACF1C006FF393 /* CarListCell.xib in Resources */,
+				F77C74EE27DAD8D7006FF393 /* CarDetailsViewController.xib in Resources */,
 				F77C74EC27DAD1E9006FF393 /* star.png in Resources */,
 				F77C74CD27DAA900006FF393 /* CarListingViewController.xib in Resources */,
 				F77C74B627DAA47B006FF393 /* Assets.xcassets in Resources */,
@@ -343,7 +336,6 @@
 				F77C74B127DAA47A006FF393 /* CarListingViewController.swift in Sources */,
 				F77C74DB27DAB05E006FF393 /* Owner.swift in Sources */,
 				F77C74E027DAB8F1006FF393 /* TableViewAdapter.swift in Sources */,
-				F77C74CB27DAA8C4006FF393 /* XIBUtils.swift in Sources */,
 				F77C74AD27DAA47A006FF393 /* AppDelegate.swift in Sources */,
 				F77C74D427DAAC86006FF393 /* Car.swift in Sources */,
 				F77C74D927DAB056006FF393 /* Rating.swift in Sources */,
